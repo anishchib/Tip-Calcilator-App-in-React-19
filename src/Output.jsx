@@ -6,7 +6,7 @@ const Output = ({tipAmount,billAmount,totalAmount}) => {
     const total = totalAmount.toFixed(2);
   return (
     <div className='output-box'>
-            <h3>Total Amount to be paid is ₹{total} { `Tip Amount  ₹${t} and Total Amount ₹${b}`}  </h3>
+            <h3> Total Amount to be paid = ₹{total} { `Tip Amount  ₹${t} and Total Amount ₹${b}`}  </h3>
            
                     
             
