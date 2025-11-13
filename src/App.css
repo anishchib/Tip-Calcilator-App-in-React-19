@@ -1,0 +1,173 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+body {
+  margin:0;
+  padding: 0;
+   background-color: #9B9B7A;
+   display: flex ;
+  justify-content: center;
+  align-items: center;
+  height: 100vh ;
+   font-family: "Just Me Again Down Here", cursive;
+  font-weight: 400;
+  font-size: 32px;
+  font-style: normal;
+ } 
+
+.main-div {
+
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-direction: column;
+ margin-top: 2rem;
+  background-color: #797D62;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px #5c6050;
+  height: 100% ;
+  width:50vw
+}
+h1 {
+  color: #FFCB70;
+ align-self: center;
+   font-family: "Press Start 2P", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.input-div {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+ align-self: center;
+ 
+}
+.bill-box {
+  display: flex;
+  color: #FFCB70;
+  gap: 2.5rem;
+  width:700px;
+  justify-content: space-between;
+ 
+}
+
+select{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em 1em;
+  font-size: 0.75em;
+  font-weight: 200;
+  font-family: inherit; 
+  font-size: 32px;
+  background-color: #F0B27A;
+  cursor: pointer;
+  transition: border-color 0.25s;
+   width: 315px;
+  height: 75px;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em 1em;
+  font-size: 0.75em;
+  font-weight: 200;
+  font-family: inherit;
+  font-size:32px;
+  background-color: #F0B27A;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 250px;
+  height: 50px;
+  
+}
+button {
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.75em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #F0B27A;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  align-self: center;
+  width: 150px;
+  height: 50px;
+}
+button:hover {
+  border-color: #646cff;  
+}
+
+.output-box {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  align-self: center;
+}
+
+
+
+@media(max-width: 768px) {
+  .main-div {
+    width: 90vw;
+  }
+  .bill-box, .output-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  select, input {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
