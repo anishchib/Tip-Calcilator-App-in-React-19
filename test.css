@@ -1,0 +1,45 @@
+html,body{
+    margin:0;
+    padding:0;
+    background-color: lightblue;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column; /* Stacks header, and the content-wrapper vertically */
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-top: 5px solid darkblue;
+  /* Other header styles */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row; /* Arranges sidebar and main content horizontally */
+  flex-grow: 1; /* Allows this wrapper to take up remaining vertical space */
+  gap: 10px;
+}
+
+.sidebar {
+  background-color: #e0e0e0;
+  padding: 20px;
+  flex-basis: 50vw; /* Sets a base width for the sidebar */
+  flex-shrink: 0; /* Prevents the sidebar from shrinking below its base width */
+  /* Other sidebar styles */
+}
+
+.main-content {
+  background-color: #ffffff;
+  padding: 20px;
+  flex-grow: 1; /* Allows the main content to take up remaining horizontal space */
+  /* Other main content styles */
+}
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  /* Other header styles */
+}
